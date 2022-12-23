@@ -6,8 +6,8 @@ const server = http.createServer((req, res) => {
   res.end('Hello World - My First CloudRun Example.\n');
 });
 
-const port = 8080;
+const PORT = process.env.PORT
 
-server.listen(port, () => {
+server.listen(PORT, () => {
   console.log(`Server running ..............`);
 });
